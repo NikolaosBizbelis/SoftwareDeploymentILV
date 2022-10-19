@@ -1,7 +1,8 @@
 To use automatic deployment, one must have the Azure CLI (or alternatively, Azure PowerShell) installed. To log in to your account through the Azure CLI use the following command:
 
 ```
-
+az login
+```
 
 To use this ARM deployment template a resource group must have already been created. 
 
@@ -12,6 +13,9 @@ az group create
 --location <location - eg. 'westeurope'>
 ```
 
+
+This template creates a Storage Account (Free Tier) as well as an Azure Web App (Free Tier).
+
 ```
 az deployment group create 
 --resource-group <rgName> 
@@ -19,4 +23,3 @@ az deployment group create
 --parameters "azuredeploy.parameters.json"
 ```
 
-This template creates a Storage Account (Free Tier) as well as an Azure Web App (Free Tier).

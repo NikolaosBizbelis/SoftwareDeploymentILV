@@ -1,0 +1,1 @@
+az deployment sub create --template-file "D:\FH\5. Semester\Software Deployment\git\Lab1\azuredeploy.json" --parameters "D:\FH\5. Semester\Software Deployment\git\Lab1\azuredeploy.parameters.json" --location "westeurope"

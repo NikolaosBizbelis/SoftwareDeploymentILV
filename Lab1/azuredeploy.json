@@ -53,7 +53,9 @@
                 "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanPortalName'))]"
             ],
             "properties": {
-                "language": "node.js",
+                "siteConfig": {
+                    "nodeVersion": "~14"
+                },
                 "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanPortalName'))]"
             }
         }

@@ -3,7 +3,7 @@
 Mithilfe dieser Tutorials geschafft:
 
 * https://upcloud.com/resources/tutorials/deploy-wordpress-with-docker-compose
-* https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose#step-3-defining-services-with-docker-compose
+* https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose
 
 
 Zur Ausführung:

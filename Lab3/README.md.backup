@@ -1,4 +1,4 @@
-Teil 1:
+**Teil 1:**
 
 Mithilfe dieser Tutorials geschafft:
 
@@ -12,3 +12,5 @@ Zur Ausführung:
 docker-compose up -d
 ```
 Erreichbar über *localhost* oder genauer über *http://localhost/wp-admin/install.php*.
+
+**Teil 2:**

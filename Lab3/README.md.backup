@@ -1,0 +1,14 @@
+Teil 1:
+
+Mithilfe dieser Tutorials geschafft:
+
+* https://upcloud.com/resources/tutorials/deploy-wordpress-with-docker-compose
+* https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose#step-3-defining-services-with-docker-compose
+
+
+Zur Ausführung:
+Öffne den Ordner im Terminal und führe folgenden Command aus:
+```
+docker-compose up -d
+```
+Erreichbar über *localhost* oder genauer über *http://localhost/wp-admin/install.php*.

@@ -2,31 +2,35 @@ version: '3'
 
 services:
     mysql:
-        image: mysql:latest
-        container_name: db
-        restart: unless-stopped
+        build:
+            context: ./df-mysql
+        container_name: mysql
+        restart: always
         environment:
          - MYSQL_ROOT_PASSWORD=password
          - MYSQL_USER=user
          - MYSQL_PASSWORD=password
          - MYSQL_DATABASE=wordpress
         volumes: 
-          - mysql:/var/lib/mysql
+          - mysql_vol:/var/lib/mysql
           
     wordpress:
-        image: wordpress:latest
+        depends_on:
+         - mysql
+        build:
+            context: ./df-wordpress
         container_name: wordpress
-        restart: unless-stopped
+        restart: always
         environment:
          - WORDPRESS_DB_HOST=mysql:3306
          - WORDPRESS_DB_USER=user
          - WORDPRESS_DB_PASSWORD=password
          - WORDPRESS_DB_NAME=wordpress
         ports:
-         - "80:80"
+         - 8080:80
         volumes:
-         - wordpress:/var/www/html
+         - wordpress_vol:/var/www/html
 
 volumes:
-    mysql:
-    wordpress:
+    mysql_vol: {}
+    wordpress_vol: {}

@@ -11,7 +11,7 @@ Zur Ausführung:
 ```
 docker-compose up -d
 ```
-Erreichbar über *localhost* oder genauer über *http://localhost/wp-admin/install.php*.
+Erreichbar über localhost:8080.
 
 **Teil 2:**
 Zur Ausführung:
@@ -19,6 +19,7 @@ Zur Ausführung:
 ```
 docker-compose up -d
 ```
+Erreichbar über localhost:8080 bzw. http://localhost:8080/wordpress.
 Die builds werden automatisch ausgeführt. Falls die builds geändert werden, dann müssen jene gelöscht werden damit sie wieder neu gebuildet werden bei einem weiteren docker-compose.
 
 **Roadblocks:**
